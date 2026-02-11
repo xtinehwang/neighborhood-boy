@@ -1,0 +1,78 @@
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: only light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eaeaea;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 999px;
+}
+
+.nb-marker {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px 999px 999px 0;
+  background: #111;
+  border: 2px solid #fff;
+  transform: rotate(-45deg);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.nb-marker::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.nb-marker.is-selected {
+  background: #ff4500;
+}
+
+.nb-user-marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #ff4500;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 6px rgba(255, 69, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+}
