@@ -54,6 +54,7 @@ export async function POST(request) {
 
     return new Response(JSON.stringify({ ok: true }), { status: 200 });
   } catch (err) {
+    console.error('Recommendations API error:', err?.message || err);
     return new Response(JSON.stringify({ error: 'Failed to save row.' }), { status: 500 });
   }
 }
