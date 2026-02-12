@@ -604,7 +604,10 @@ const App = () => {
                   City Restaurant Map.
                 </h2>
                 <p className="text-sm sm:text-base md:text-xl font-medium max-w-lg mx-auto leading-relaxed text-stone-600">
-                  A hand-inked guide to the restaurants that deliver directly. No insane delivery fees. Just neighbors.
+                  A hand-inked guide to the restaurants that deliver directly in your neighborhood!{' '}
+                  <span className="font-bold">
+                    Save on delivery fees and Support your local small business at the same time !!!!!!
+                  </span>
                 </p>
               </div>
 
