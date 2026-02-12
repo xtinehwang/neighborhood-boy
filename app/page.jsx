@@ -576,13 +576,13 @@ const App = () => {
       {/* --- MAIN CONTENT --- */}
       <main className="flex-1 min-h-0 relative flex flex-col overflow-hidden">
         {view === 'home' && (
-          <section className="h-full w-full flex flex-col items-center justify-between py-6 md:py-12 px-6 z-10">
+          <section className="h-full w-full flex flex-col items-center justify-between py-4 md:py-8 px-6 z-10">
             {/* Top Buffer to push content to middle */}
-            <div className="hidden md:block flex-1"></div>
+            <div className="hidden md:block flex-[0.4]"></div>
 
-            <div className="w-full max-w-4xl flex flex-col items-center gap-y-8 md:gap-y-12">
+            <div className="w-full max-w-4xl flex flex-col items-center gap-y-6 md:gap-y-8">
               <div className="space-y-4 md:space-y-6 text-center">
-                <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter">
+                <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] tracking-tighter">
                   The{' '}
                   <span className="text-[#FF4500] relative italic font-serif">
                     Neighborhood
@@ -603,25 +603,25 @@ const App = () => {
                   <br />
                   City Restaurant Map.
                 </h2>
-                <p className="text-sm sm:text-base md:text-xl font-medium max-w-lg mx-auto leading-relaxed text-stone-600">
-                  A hand-inked guide to the restaurants that deliver directly in your neighborhood!{' '}
-                  <span className="font-bold">
-                    Save on delivery fees and Support your local small business at the same time !!!!!!
+                <p className="text-xs sm:text-sm md:text-lg font-medium max-w-lg mx-auto leading-relaxed text-stone-600">
+                  A hand-inked guide to the restaurants that deliver directly in your neighborhood.
+                  <span className="block font-bold mt-2">
+                    Save on delivery fees and Support your local small business at the same time!
                   </span>
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center w-full sm:w-auto px-4">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center w-full sm:w-auto px-4">
                 <button
                   onClick={() => setView('map')}
-                  className="px-10 py-4 md:py-5 bg-black text-white font-bold font-sans text-lg md:text-xl rotate-[-1deg] active:rotate-0 transition-transform shadow-[6px_6px_0px_#FF4500]"
+                  className="px-8 py-3 md:py-4 bg-black text-white font-bold font-sans text-base md:text-lg rotate-[-1deg] active:rotate-0 transition-transform shadow-[6px_6px_0px_#FF4500]"
                   style={{ borderRadius: '8px 24px 8px 24px' }}
                 >
                   Delivery Nearby 👅
                 </button>
                 <button
                   onClick={() => setIsLearnMoreOpen(true)}
-                  className="px-10 py-4 md:py-5 border-2 border-black font-bold font-sans text-lg md:text-xl bg-white rotate-[1deg] active:rotate-0 transition-transform shadow-[6px_6px_0px_rgba(0,0,0,0.05)]"
+                  className="px-8 py-3 md:py-4 border-2 border-black font-bold font-sans text-base md:text-lg bg-white rotate-[1deg] active:rotate-0 transition-transform shadow-[6px_6px_0px_rgba(0,0,0,0.05)]"
                   style={{ borderRadius: '24px 8px 24px 8px' }}
                 >
                   Learn More
@@ -629,41 +629,12 @@ const App = () => {
               </div>
             </div>
 
-            <div className="opacity-30 flex flex-col items-center">
-              <svg width="100" height="50" viewBox="0 0 200 100" className="md:w-[140px] md:h-[70px]">
-                <path
-                  d="M10 90 L40 70 L40 30 L10 50 Z"
-                  fill="none"
-                  stroke="black"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M40 70 L80 80 L80 40 L40 30 Z"
-                  fill="none"
-                  stroke="black"
-                  strokeWidth="1.5"
-                />
-                <path
-                  d="M80 80 L120 70 L120 30 L80 40 Z"
-                  fill="none"
-                  stroke="black"
-                  strokeWidth="1.5"
-                />
-                <path
-                  d="M10 50 L40 30 L80 40 L120 30 L150 50"
-                  fill="none"
-                  stroke="#FF4500"
-                  strokeWidth="2.5"
-                />
-              </svg>
-              <p className="text-[8px] font-sans font-bold mt-2 uppercase tracking-[0.3em]">
+              <p className="text-[8px] font-sans font-bold mt-2 uppercase tracking-[0.3em] opacity-30">
                 Neighborhood Boy v1.12
               </p>
-            </div>
 
             {/* Bottom Buffer */}
-            <div className="hidden md:block flex-1"></div>
+            <div className="hidden md:block flex-[0.4]"></div>
           </section>
         )}
 
